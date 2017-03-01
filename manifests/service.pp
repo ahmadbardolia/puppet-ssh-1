@@ -1,7 +1,5 @@
-class ssh::service(
-  $service_name = $::ssh::service_name,
-) {
-  service { $service_name: 
+class ssh::servic {
+  service { 'sshd': 
     ensure     => running,
     enable     => true,
     hasstatus  => true,

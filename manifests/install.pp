@@ -1,7 +1,5 @@
-class ssh::install(
-  $package_name = $::ssh::package_name,
-) {
-  package { $package_name: 
+class ssh::install {
+  package { 'openssh-server': 
     ensure => present,
   }
 }
